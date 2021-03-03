@@ -30,9 +30,9 @@ public class Assignment2 {
 	/* TESEANS WORK
 		// Returns the near miss of z:
 	// The smaller value of equations z^n - (x^n + y^n) and (z+1)^n - (x^n + y^n)
-		static int nearMiss(int x, int y, double z, int n) {
-		int zLo = abs(Math.exp(z, n) - (Math.exp(x, n) + Math.exp(y, n)));
-		int zHi = abs(Math.exp((z + 1), n) - (Math.exp(x, n) + Math.exp(y, n)));
+		static int getNearMiss(int x, int y, double z, int n) {
+		int zLo = abs(Math.pow(z, n) - (Math.pow(x, n) + Math.pow(y, n)));
+		int zHi = abs(Math.pow((z + 1), n) - (Math.pow(x, n) + Math.pow(y, n)));
 		return zLo < zHi ? zLo : zHi;
 	}
 	 */
